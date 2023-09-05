@@ -129,7 +129,133 @@
           <footer></footer>
         </article>
       </section>
-      <section id="informacoes-adicionais"></section>
+      <section id="criar-conta">
+        <h1>Criar conta</h1>
+        <form action="/" method="POST">
+          <fieldset>
+            <legend>Dados pessoais</legend>
+            <div>
+              <label for="nome">Nome</label>
+              <input
+                autofocus
+                type="text"
+                id="nome"
+                name="sobrenome"
+                placeholder="Digite o seu nome"
+              />
+            </div>
+            <div>
+              <label for="sobrenome">Sobrenome</label>
+              <input
+                type="text"
+                id="sobrenome"
+                name="sobrenome"
+                placeholder="Digite o seu sobrenome"
+              />
+            </div>
+            <div>
+              <label for="data-nascimento">Data de nascimento</label>
+              <input
+                type="date"
+                id="data-nascimento"
+                name="data-nascimento"
+                placeholder="Digite a sua data de nascimento"
+              />
+            </div>
+            <div>
+              <label for="estado-civil">Estado civil</label>
+              <select name="estado-civil" id="estado-civil">
+                <option selected value="solteiro">Solteiro(a)</option>
+                <option value="casado">Casado(a)</option>
+                <option value="separado">Separado(a)</option>
+                <option value="divorciado">Divorciado(a)</option>
+                <option value="viuvo">Viúvo(a)</option>
+              </select>
+            </div>
+          </fieldset>
+          <fieldset>
+            <legend>Sua conta</legend>
+            <div>
+              <label for="nome-usuario">Nome de usuário</label>
+              <input
+                type="text"
+                id="nome-usuario"
+                name="nome-usuario"
+                placeholder="Digite o seu nome de usuário"
+              />
+            </div>
+            <div>
+              <label for="correio-eletronico">Email</label>
+              <input
+                type="email"
+                id="correio-eletronico"
+                name="correio-eletronico"
+                placeholder="Digite o seu email"
+              />
+            </div>
+            <div>
+              <label for="senha">Senha</label>
+              <input
+                type="password"
+                id="senha"
+                name="senha"
+                placeholder="Digite a sua senha"
+              />
+            </div>
+            <div>
+              <label for="cor-favorita">Cor favorita</label>
+              <input
+                type="color"
+                id="cor-favorita"
+                name="cor-favorita"
+                placeholder="Digite a sua cor favorita"
+              />
+            </div>
+            <div>
+              <input
+                type="checkbox"
+                checked
+                id="notificacoes-email"
+                name="notificacoes-email"
+              />
+              <label for="notificacoes-email">
+                Quero receber notificações por email
+              </label>
+            </div>
+          </fieldset>
+          <fieldset>
+            <legend>Qual é o seu sistema operacional favorito?</legend>
+            <div>
+              <input
+                type="radio"
+                name="sistema-favorito"
+                id="sistema-favorito-windows"
+                value="windows"
+              />
+              <label for="sistema-favorito-windows">Windows</label>
+            </div>
+            <div>
+              <input
+                type="radio"
+                name="sistema-favorito"
+                id="sistema-favorito-linux"
+                value="linux"
+              />
+              <label for="sistema-favorito-linux">Linux</label>
+            </div>
+            <div>
+              <input
+                type="radio"
+                name="sistema-favorito"
+                id="sistema-favorito-macos"
+                value="macos"
+              />
+              <label for="sistema-favorito-macos">MacOS</label>
+            </div>
+          </fieldset>
+          <button type="submit">Enviar</button>
+        </form>
+      </section>
     </main>
     <!-- Rodapé da página. Não utilizar nav aqui dentro quando houver links. -->
     <footer></footer>
