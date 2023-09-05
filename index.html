@@ -1,0 +1,137 @@
+<!-- Informa que a página segue o padrão HTML5. -->
+<!DOCTYPE html>
+<!-- Tag principal da página. Dentro dela, deve haver APENAS head e body.
+     Atributo lang informa que a página está em português brasileiro.
+-->
+<html lang="pt-BR">
+  <!-- Na tag head você coloca os metadados da página e também carrega o CSS. -->
+  <head>
+    <!-- Define que a página deve utilizar a codificação UTF-8.
+         Garante que acentos e caracteres especiais sejam exibidos corretamente.
+    -->
+    <meta charset="UTF-8" />
+    <!-- Define que sua página deve ocupar todo espaço horizontal da tela do dispositivo.
+         Também coloca o nível de zoom da tela para o padrão inicial.
+         Esse metadado é importante para garantir o design responsivo.
+    -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- Define o título da página (aparece na aba). -->
+    <title>Introdução aos fundamentos da web</title>
+    <!-- Define o ícone (favicon) da página (aparece na aba).
+         Pode estar nos formatos, jpg, png, svg e ico.
+         Se você quiser gerar um favicon, pode acessar esse site: https://favicon.io
+    -->
+    <link rel="icon" href="/images/favicon.ico" />
+    <!-- Descrição da página (usuário não vê). Só aparece no SERP dos motores de busca (Google) e quando você compartilha o link da página em uma rede social. -->
+    <meta name="description" content="Descrição da página aqui." />
+    <!-- Palavras-chave da página (usuário não vê). Essa informação é utilizada somente pelos motores de busca (mas afeta muito pouco o SEO). -->
+    <meta name="keywords" content="HTML, CSS, JavaScript, fundamentos da web" />
+  </head>
+  <!-- Conteúdo da página. Todo seu conteúdo deve ficar aqui dentro. -->
+  <body>
+    <!-- Cabeçalho da página -->
+    <header>
+      <!-- Link que aponta para a raiz do site.
+           Como não há texto nesse link, o atributo title ajuda a descrever do que se trata o link.
+       -->
+      <a href="/" title="Ir para a Home">
+        <!-- Logo do site. Importante sempre colocar o texto alternativo (utilizado pelos leitores de tela).
+             Nesse caso você não precisa de figure e figcaption, pois não há necessidade de exibir uma legenda.
+        -->
+        <img
+          src="/images/logo.png"
+          alt="Uma descrição da imagem que está sendo exibida."
+        />
+      </a>
+      <!-- Navegação da página -->
+      <nav>
+        <!-- Estou utilizando ul e li para destacar que se trata de uma lista de links -->
+        <ul>
+          <li>
+            <a href="/uma-pagina.html">Uma página</a>
+          </li>
+          <li>
+            <a href="/outra-pagina.html">Outra página</a>
+          </li>
+          <li>
+            <a href="/mais-uma-pagina.html">Mais uma página</a>
+          </li>
+        </ul>
+      </nav>
+    </header>
+    <!-- Aqui fica o conteúdo principal da página. Geralmente você vai ter sections aqui dentro -->
+    <main>
+      <!-- Destaca uma sessão da página, como banner, artigo, comentários, recomendações, etc.
+             Você pode utilizar o atributo id para definir um identificador único à sessão.
+             UM ID NUNCA DEVE SER REPETIDO EM OUTRO ELEMENTO.
+        -->
+      <section id="artigo-principal">
+        <!-- Utilizar quando você quiser exibir um conteúdo independente, como um artigo, resenha, comentário, etc. -->
+        <article>
+          <!-- Cabeçalho DO ARTIGO (e não da página). Você pode colocar um header dentro de um artigo mesmo que já exista um header na página. -->
+          <header>
+            <!-- Informa a data de publicação do artigo.
+                 O atributo datetime guarda o tempo no formato AAAA-DD-MM.
+                 Dentro da tag você deve pode informar esse tempo da forma que achar mais agradável para o usuário.
+            -->
+            <time datetime="2023-09-05">Em setembro de 2023</time>
+            <!-- Cabeçalho de sessão. É o título principal do artigo. Utilize somente um. -->
+            <h1>Introdução aos fundamentos da web</h1>
+            <!-- Subtítulo do artigo. Sempre utilizar a tag p para subtítulos. -->
+            <p>
+              Sed ut perspiciatis unde omnis iste natus error sit voluptatem
+              accusantium doloremque laudantium
+            </p>
+          </header>
+          <!-- Assim como o header, essa é uma sessão DO ARTIGO.
+               Geralmente utilizado para organizar semânticamente um artigo muito grande.
+               Por exemplo, em um artigo sobre fundamentos da web, pode haver uma sessão para falar sobre HTML, outra sobre CSS, etc...
+          -->
+          <section>
+            <!-- Cabeçalho da sessão do artigo. Aqui utiliza-se um h2, pois é menor importante que o título do artigo (h1) -->
+            <h2>Sed ut perspiciatis unde omnis</h2>
+            <!-- Parágrafo de texto -->
+            <p>
+              Sed ut perspiciatis unde omnis iste natus error sit voluptatem
+              accusantium doloremque laudantium, totam rem aperiam, eaque ipsa
+              quae ab illo inventore veritatis et quasi architecto beatae vitae
+              dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit
+              aspernatur aut odit aut fugit, sed quia consequuntur magni dolores
+              eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam
+              est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci
+              velit, sed quia non numquam eius modi tempora incidunt ut labore
+              et dolore magnam aliquam quaerat voluptatem. Ut enim ad minima
+              veniam, quis nostrum exercitationem ullam corporis suscipit
+              laboriosam, nisi ut aliquid ex ea commodi consequatur? Quis autem
+              vel eum iure reprehenderit qui in ea voluptate velit esse quam
+              nihil molestiae consequatur, vel illum qui dolorem eum fugiat quo
+              voluptas nulla pariatur
+            </p>
+          </section>
+          <section>
+            <h2>Perspiciatis unde omnis</h2>
+            <p>
+              Totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et
+              quasi architecto beatae vitae dicta sunt explicabo. Nemo enim
+              ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit,
+              sed quia consequuntur magni dolores eos qui ratione voluptatem
+              sequi nesciunt. Neque porro quisquam est, qui dolorem ipsum quia
+              dolor sit amet, consectetur, adipisci velit, sed quia non numquam
+              eius modi tempora incidunt ut labore et dolore magnam aliquam
+              quaerat voluptatem. Ut enim ad minima veniam, quis nostrum
+              exercitationem ullam corporis suscipit laboriosam, nisi ut aliquid
+              ex ea commodi consequatur? Quis autem vel eum iure reprehenderit
+              qui in ea voluptate velit esse quam nihil molestiae consequatur,
+              vel illum qui dolorem eum fugiat quo voluptas nulla pariatur
+            </p>
+          </section>
+          <!-- Rodapé DO ARTIGO. -->
+          <footer></footer>
+        </article>
+      </section>
+      <section id="informacoes-adicionais"></section>
+    </main>
+    <!-- Rodapé da página. Não utilizar nav aqui dentro quando houver links. -->
+    <footer></footer>
+  </body>
+</html>
