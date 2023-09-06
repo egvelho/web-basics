@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <section id="section-contato">
+      <h1 class="title">Formulário de contato</h1>
+      <form
+        method="post"
+        action="https://getform.io/f/a414f938-14bf-4874-9af8-a8ab645d40ab"
+      >
+        <fieldset>
+          <legend>Informações básicas</legend>
+          <div class="form-linha">
+            <label for="nome" class="rotulo">Nome</label>
+            <input
+              class="campo-texto"
+              type="text"
+              id="nome"
+              name="nome"
+              placeholder="Digite o seu nome"
+            />
+          </div>
+          <div class="form-linha">
+            <label for="sobrenome" class="rotulo">Sobrenome</label>
+            <input
+              type="text"
+              class="campo-texto"
+              id="sobrenome"
+              name="sobrenome"
+              placeholder="Digite o seu sobrenome"
+            />
+          </div>
+        </fieldset>
+        <div class="form-linha">
+          <label for="cor-favorita" class="rotulo">Cor favorita</label>
+          <input
+            type="color"
+            id="cor-favorita"
+            name="cor-favorita"
+            placeholder="Digite a sua cor favorita"
+          />
+        </div>
+        <div class="form-linha">
+          <label for="senha" class="rotulo">Senha</label>
+          <input
+            type="password"
+            class="campo-texto"
+            id="senha"
+            name="senha"
+            placeholder="Digite a sua senha"
+          />
+        </div>
+        <div class="form-linha">
+          <input
+            type="checkbox"
+            id="receber-emails"
+            name="receber-emails"
+            checked
+          />
+          <label for="receber-emails">
+            Desejo receber publicidade no meu email
+          </label>
+        </div>
+        <fieldset>
+          <legend>Escolha seu pokemon inicial</legend>
+          <input
+            type="radio"
+            value="charmander"
+            id="charmander"
+            name="pokemon-inicial"
+          />
+          <label for="charmander">Charmander</label>
+          <input
+            type="radio"
+            value="bulbassauro"
+            id="bulbassauro"
+            name="pokemon-inicial"
+            checked
+          />
+          <label for="bulbassauro">Bulbassauro</label>
+          <input
+            type="radio"
+            value="squirtle"
+            id="squirtle"
+            name="pokemon-inicial"
+          />
+          <label for="squirtle">Squirtle</label>
+        </fieldset>
+        <label for="anime-favorito">Digite o seu anime favorito</label>
+        <select id="anime-favorito" name="anime-favorito">
+          <option value="hxh">Hunter X Hunter</option>
+          <option value="fullmetal">Fullmetal Alchemist</option>
+          <option value="naruto">Naruto</option>
+          <option value="demon-slayer">Demon Slayer</option>
+          <option value="one-punch">One Punch Man</option>
+          <option value="jujutsu">Jujutsu Kaisen</option>
+        </select>
+        <button type="submit" class="button">Enviar</button>
+      </form>
+    </section>
+  </body>
+</html>
